@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Anniversary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Our Anniversary home">
+      <span class="brand-mark">♡</span>
+      <span>Our Anniversary</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#counter">Counter</a>
+      <a href="#letter">Love Letter</a>
+      <a href="#reasons">Reasons</a>
+      <a href="#surprise">Surprise</a>
+      <a href="#music">Music</a>
+      <a href="#future">Future</a>
+      <a href="#memories">Memories</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section page-view active-view">
+      <div class="hero-glow"></div>
+      <div class="romantic-orbit" aria-hidden="true"><span>♡</span><span>✦</span><span>♡</span></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p id="dedicationLine" class="dedication-badge">For my favorite person</p>
+          <p class="eyebrow">A quiet celebration of us</p>
+          <h1 id="heroTitle"></h1>
+          <p id="heroSubtitle" class="hero-subtitle"></p>
+          <div class="hero-mini-grid" aria-label="Personal love notes">
+            <article class="mini-love-card quote-card">
+              <span>tiny quote</span>
+              <p>“In every little moment, I still choose you.”</p>
+            </article>
+            <article class="mini-love-card">
+              <span>today’s love note</span>
+              <p id="smallLoveNote"></p>
+            </article>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Anniversary note">
+          <span class="card-kicker">Together Since</span>
+          <strong id="heroDateLabel">Our first hello</strong>
+          <p>A soft little space for the memories, music, words, and future dreams that belong to us.</p>
+          <div class="universe-pill"><span>✦</span> Our little universe <span>♡</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="timeline" class="section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Our Story</p><h2>Timeline</h2></div>
+        <div id="timelineList" class="timeline"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section alt-section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Favorite frames</p><h2>Photo & Video Gallery</h2></div>
+        <div class="slider-card">
+          <div id="gallerySlider" class="gallery-slider"></div>
+          <div class="slider-controls">
+            <button id="prevSlide" class="icon-button" type="button" aria-label="Previous slide">‹</button>
+            <div id="galleryDots" class="dots"></div>
+            <button id="nextSlide" class="icon-button" type="button" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="counter" class="section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Every second counts</p><h2>Time Together Counter</h2></div>
+        <div class="counter-grid">
+          <article class="counter-card"><h3>Time we have shared</h3><div id="passedCounter" class="time-grid"></div></article>
+          <article class="counter-card"><h3>Until our next date</h3><div id="nextCounter" class="time-grid"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="letter" class="section alt-section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Words from my heart</p><h2>Love Letter</h2></div>
+        <article class="letter-card"><div class="letter-seal">♡</div><p id="letterText" class="typewriter"></p></article>
+      </div>
+    </section>
+
+    <section id="reasons" class="section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Little truths</p><h2>Reasons Why I Love You</h2></div>
+        <div id="reasonsList" class="reasons-grid"></div>
+      </div>
+    </section>
+
+    <section id="surprise" class="section surprise-section page-view">
+      <div class="container surprise-card">
+        <p class="eyebrow">A tiny moment for you</p>
+        <h2>Surprise Hearts Animation</h2>
+        <button id="surpriseButton" class="primary-button" type="button">Release the Hearts</button>
+        <p id="surpriseMessage" class="hidden-message"></p>
+      </div>
+    </section>
+
+    <section id="music" class="section alt-section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Our soundtrack</p><h2>Music Player</h2></div>
+        <div id="songsList" class="cards-grid"></div>
+      </div>
+    </section>
+
+    <section id="future" class="section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Dreams waiting for us</p><h2>Future Plans</h2></div>
+        <div id="placesList" class="cards-grid"></div>
+      </div>
+    </section>
+
+    <section id="memories" class="section alt-section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Messages worth keeping</p><h2>Chat Memories</h2></div>
+        <div id="chatsList" class="chat-grid"></div>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section page-view">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Private editing space</p><h2>Admin Panel</h2></div>
+        <div id="adminLocked" class="admin-card">
+          <p>Open the private editor to personalize every section. Your changes are saved locally in this browser.</p>
+          <button id="openAdmin" class="secondary-button" type="button">Open Admin Panel</button>
+        </div>
+        <div id="adminPanel" class="admin-panel hidden"></div>
+      </div>
+    </section>
+  </main>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
